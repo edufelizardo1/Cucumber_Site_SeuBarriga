@@ -1,4 +1,5 @@
 # language: pt
+@terceiro
 Funcionalidade: Testar o site Seu Barriga
   Como um usuário
   Eu quero cadastrar contas
@@ -6,8 +7,8 @@ Funcionalidade: Testar o site Seu Barriga
 
   Contexto: Efetuar o login no sistema
     Dado que estou acessando a aplicação
-    Quando  informo o usuário "edufelizardo1@gmail.com"
-    E a senha "256249"
+    Quando  informo o usuário "email1@gmail.com"
+    E a senha "******"
     E seleciono entrar
     Então  visualizo a página inicial
     Quando seleciono Contas
