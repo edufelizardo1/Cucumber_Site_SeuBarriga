@@ -12,12 +12,13 @@ Funcionalidade: Testar o site Seu Barriga
     E seleciono entrar
     Então  visualizo a página inicial
     Quando seleciono Contas
-    E seleciono adincionar E inform a conta "Conta de Teste"
+    E seleciono adincionar
+    E inform a conta "<ContadeTeste>"
     E seleciono salvar
     Entao  a conta é inserida com sucesso
     Exemplos:
-      | seuUsuario   | suaSenha |
-      | edufeliz**** | ******   |
+      | seuUsuario              | suaSenha | ContadeTeste   |
+      | email@gmail.com | ******   | Conta de Teste |
 
   @ignore
   Esquema do Cenário: Não deve inserir uma conta sem nome
@@ -27,13 +28,14 @@ Funcionalidade: Testar o site Seu Barriga
     E seleciono entrar
     Então  visualizo a página inicial
     Quando seleciono Contas
+    E seleciono adincionar
     E seleciono salvar
     Entao  Sou notificado que o nome da conta é obrigatório
     Exemplos:
-      | seuUsuario   | suaSenha |
-      | edufeliz**** | ******   |
+      | seuUsuario              | suaSenha |
+      | email@gmail.com | ******   |
 
-  @ignore
+
   Esquema do Cenário: Não deve inserir uma conta com nome já existente
     Dado que estou acessando a aplicação
     Quando  informo o usuário "<seuUsuario>"
@@ -41,9 +43,10 @@ Funcionalidade: Testar o site Seu Barriga
     E seleciono entrar
     Então  visualizo a página inicial
     Quando seleciono Contas
-    E seleciono adincionar E inform a conta "Conta de Teste"
+    E seleciono adincionar
+    E inform a conta "<ContadeTeste>"
     E seleciono salvar
     Entao  sou notificado que já existe uma conta com esse nome
     Exemplos:
-      | seuUsuario   | suaSenha |
-      | edufeliz**** | ******   |
+      | seuUsuario      | suaSenha | ContadeTeste   |
+      | email@gmail.com | ******   | Conta de Teste |
