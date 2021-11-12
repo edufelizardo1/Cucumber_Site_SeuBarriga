@@ -17,10 +17,10 @@ Funcionalidade: Testar o site Seu Barriga
     E seleciono salvar
     Entao  recebo a mensagem "<mensagem>"
     Exemplos:
-      | seuUsuario       | suaSenha | ContadeTeste     | mensagem                           |
-      | email1@gmail.com | ******   | Conta de Teste   | Conta adicionada com sucesso!      |
-      | email1@gmail.com | ******   |                  | Informe o nome da conta            |
-      | email1@gmail.com | ******   | Conta mesmo nome | Já existe uma conta com esse nome! |
+      | seuUsuario         | suaSenha | ContadeTeste     | mensagem                           |
+      | qatester@tester.qa | qa       | Conta de Teste   | Conta adicionada com sucesso!      |
+      | qatester@tester.qa | qa       |                  | Informe o nome da conta            |
+      | qatester@tester.qa | qa       | Conta mesmo nome | Já existe uma conta com esse nome! |
 
 
 #  Esquema do Cenário: Não deve inserir uma conta sem nome
