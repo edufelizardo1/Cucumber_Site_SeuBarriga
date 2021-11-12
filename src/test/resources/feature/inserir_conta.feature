@@ -1,4 +1,5 @@
 # language: pt
+@primeiro
 Funcionalidade: Testar o site Seu Barriga
   Como um usuário
   Eu quero cadastrar contas
@@ -16,10 +17,10 @@ Funcionalidade: Testar o site Seu Barriga
     E seleciono salvar
     Entao  recebo a mensagem "<mensagem>"
     Exemplos:
-      | seuUsuario              | suaSenha | ContadeTeste     | mensagem                           |
-      | edufelizardo1@gmail.com | 256249   | Conta de Teste   | Conta adicionada com sucesso!      |
-      | edufelizardo1@gmail.com | 256249   |                  | Informe o nome da conta            |
-      | edufelizardo1@gmail.com | 256249   | Conta mesmo nome | Já existe uma conta com esse nome! |
+      | seuUsuario       | suaSenha | ContadeTeste     | mensagem                           |
+      | email1@gmail.com | ******   | Conta de Teste   | Conta adicionada com sucesso!      |
+      | email1@gmail.com | ******   |                  | Informe o nome da conta            |
+      | email1@gmail.com | ******   | Conta mesmo nome | Já existe uma conta com esse nome! |
 
 
 #  Esquema do Cenário: Não deve inserir uma conta sem nome
