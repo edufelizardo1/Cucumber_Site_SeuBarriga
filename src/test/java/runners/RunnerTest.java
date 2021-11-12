@@ -23,8 +23,8 @@ public class RunnerTest {
                         "\\Labs_Java\\Cucumber_Site_SeuBarriga\\ChromeDriver\\chromedriver.exe");
                 WebDriver webDriver = new ChromeDriver();
                 webDriver.get("https://seubarriga.wcaquino.me/");
-                webDriver.findElement(By.id("email")).sendKeys("email1@gmail.com");
-                webDriver.findElement(By.name("senha")).sendKeys("******");
+                webDriver.findElement(By.id("email")).sendKeys("qatester@tester.qa");
+                webDriver.findElement(By.name("senha")).sendKeys("qa");
                 webDriver.findElement(By.tagName("button")).click();
                 webDriver.findElement(By.linkText("reset")).click();
                 webDriver.quit();
