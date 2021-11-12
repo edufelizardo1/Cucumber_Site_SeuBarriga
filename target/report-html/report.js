@@ -13,7 +13,7 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.scenarioOutline({
-  "line": 8,
+  "line": 7,
   "name": "Deve inserir uma conta com sucesso",
   "description": "",
   "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso",
@@ -21,57 +21,57 @@ formatter.scenarioOutline({
   "keyword": "Esquema do Cenário"
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "que estou acessando a aplicação",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "informo o usuário \"\u003cseuUsuario\u003e\"",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "a senha \"\u003csuaSenha\u003e\"",
   "keyword": "E "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "seleciono entrar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "visualizo a página inicial",
   "keyword": "Então "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "seleciono Contas",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "seleciono adincionar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "inform a conta \"\u003cContadeTeste\u003e\"",
   "keyword": "E "
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "seleciono salvar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 18,
-  "name": "a conta é inserida com sucesso",
+  "line": 17,
+  "name": "recebo a mensagem \"\u003cmensagem\u003e\"",
   "keyword": "Entao "
 });
 formatter.examples({
-  "line": 19,
+  "line": 18,
   "name": "",
   "description": "",
   "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;",
@@ -80,25 +80,47 @@ formatter.examples({
       "cells": [
         "seuUsuario",
         "suaSenha",
-        "ContadeTeste"
+        "ContadeTeste",
+        "mensagem"
       ],
-      "line": 20,
+      "line": 19,
       "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;;1"
     },
     {
       "cells": [
         "edufelizardo1@gmail.com",
         "256249",
-        "Conta de Teste"
+        "Conta de Teste",
+        "Conta adicionada com sucesso!"
+      ],
+      "line": 20,
+      "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;;2"
+    },
+    {
+      "cells": [
+        "edufelizardo1@gmail.com",
+        "256249",
+        "",
+        "Informe o nome da conta"
       ],
       "line": 21,
-      "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;;2"
+      "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;;3"
+    },
+    {
+      "cells": [
+        "edufelizardo1@gmail.com",
+        "256249",
+        "Conta mesmo nome",
+        "Já existe uma conta com esse nome!"
+      ],
+      "line": 22,
+      "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;;4"
     }
   ],
   "keyword": "Exemplos"
 });
 formatter.scenario({
-  "line": 21,
+  "line": 20,
   "name": "Deve inserir uma conta com sucesso",
   "description": "",
   "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;;2",
@@ -106,12 +128,12 @@ formatter.scenario({
   "keyword": "Esquema do Cenário"
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "que estou acessando a aplicação",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "informo o usuário \"edufelizardo1@gmail.com\"",
   "matchedColumns": [
     0
@@ -119,7 +141,7 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "a senha \"256249\"",
   "matchedColumns": [
     1
@@ -127,27 +149,27 @@ formatter.step({
   "keyword": "E "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "seleciono entrar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "visualizo a página inicial",
   "keyword": "Então "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "seleciono Contas",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "seleciono adincionar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "inform a conta \"Conta de Teste\"",
   "matchedColumns": [
     2
@@ -155,20 +177,23 @@ formatter.step({
   "keyword": "E "
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "seleciono salvar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 18,
-  "name": "a conta é inserida com sucesso",
+  "line": 17,
+  "name": "recebo a mensagem \"Conta adicionada com sucesso!\"",
+  "matchedColumns": [
+    3
+  ],
   "keyword": "Entao "
 });
 formatter.match({
   "location": "InserirContasteps.queEstouAcessandoAAplicação()"
 });
 formatter.result({
-  "duration": 6784426800,
+  "duration": 4981306400,
   "status": "passed"
 });
 formatter.match({
@@ -181,7 +206,7 @@ formatter.match({
   "location": "InserirContasteps.informoOUsuário(String)"
 });
 formatter.result({
-  "duration": 389330500,
+  "duration": 403890900,
   "status": "passed"
 });
 formatter.match({
@@ -194,35 +219,35 @@ formatter.match({
   "location": "InserirContasteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 364912400,
+  "duration": 186593000,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoEntrar()"
 });
 formatter.result({
-  "duration": 765654200,
+  "duration": 771994500,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.visualizoAPáginaInicial()"
 });
 formatter.result({
-  "duration": 76345400,
+  "duration": 65466300,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoContas()"
 });
 formatter.result({
-  "duration": 105726200,
+  "duration": 80711600,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoAdincionar()"
 });
 formatter.result({
-  "duration": 431880100,
+  "duration": 334640200,
   "status": "passed"
 });
 formatter.match({
@@ -235,120 +260,48 @@ formatter.match({
   "location": "InserirContasteps.informAConta(String)"
 });
 formatter.result({
-  "duration": 233719400,
+  "duration": 221368300,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoSalvar()"
 });
 formatter.result({
-  "duration": 474580600,
+  "duration": 429867200,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContasteps.aContaÉInseridaComSucesso()"
+  "arguments": [
+    {
+      "val": "Conta adicionada com sucesso!",
+      "offset": 19
+    }
+  ],
+  "location": "InserirContasteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 123680600,
+  "duration": 69751900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2019930600,
+  "duration": 2707872600,
   "status": "passed"
 });
-formatter.scenarioOutline({
-  "line": 24,
-  "name": "Não deve inserir uma conta sem nome",
-  "description": "",
-  "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-sem-nome",
-  "type": "scenario_outline",
-  "keyword": "Esquema do Cenário"
-});
-formatter.step({
-  "line": 25,
-  "name": "que estou acessando a aplicação",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 26,
-  "name": "informo o usuário \"\u003cseuUsuario\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 27,
-  "name": "a senha \"\u003csuaSenha\u003e\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 28,
-  "name": "seleciono entrar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 29,
-  "name": "visualizo a página inicial",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 30,
-  "name": "seleciono Contas",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 31,
-  "name": "seleciono adincionar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 32,
-  "name": "seleciono salvar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 33,
-  "name": "Sou notificado que o nome da conta é obrigatório",
-  "keyword": "Entao "
-});
-formatter.examples({
-  "line": 34,
-  "name": "",
-  "description": "",
-  "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-sem-nome;",
-  "rows": [
-    {
-      "cells": [
-        "seuUsuario",
-        "suaSenha"
-      ],
-      "line": 35,
-      "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-sem-nome;;1"
-    },
-    {
-      "cells": [
-        "edufelizardo1@gmail.com",
-        "256249"
-      ],
-      "line": 36,
-      "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-sem-nome;;2"
-    }
-  ],
-  "keyword": "Exemplos"
-});
 formatter.scenario({
-  "line": 36,
-  "name": "Não deve inserir uma conta sem nome",
+  "line": 21,
+  "name": "Deve inserir uma conta com sucesso",
   "description": "",
-  "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-sem-nome;;2",
+  "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;;3",
   "type": "scenario",
   "keyword": "Esquema do Cenário"
 });
 formatter.step({
-  "line": 25,
+  "line": 8,
   "name": "que estou acessando a aplicação",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 26,
+  "line": 9,
   "name": "informo o usuário \"edufelizardo1@gmail.com\"",
   "matchedColumns": [
     0
@@ -356,7 +309,7 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 27,
+  "line": 10,
   "name": "a senha \"256249\"",
   "matchedColumns": [
     1
@@ -364,40 +317,51 @@ formatter.step({
   "keyword": "E "
 });
 formatter.step({
-  "line": 28,
+  "line": 11,
   "name": "seleciono entrar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 29,
+  "line": 12,
   "name": "visualizo a página inicial",
   "keyword": "Então "
 });
 formatter.step({
-  "line": 30,
+  "line": 13,
   "name": "seleciono Contas",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 31,
+  "line": 14,
   "name": "seleciono adincionar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 32,
+  "line": 15,
+  "name": "inform a conta \"\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "E "
+});
+formatter.step({
+  "line": 16,
   "name": "seleciono salvar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 33,
-  "name": "Sou notificado que o nome da conta é obrigatório",
+  "line": 17,
+  "name": "recebo a mensagem \"Informe o nome da conta\"",
+  "matchedColumns": [
+    3
+  ],
   "keyword": "Entao "
 });
 formatter.match({
   "location": "InserirContasteps.queEstouAcessandoAAplicação()"
 });
 formatter.result({
-  "duration": 5377764200,
+  "duration": 5411166400,
   "status": "passed"
 });
 formatter.match({
@@ -410,7 +374,7 @@ formatter.match({
   "location": "InserirContasteps.informoOUsuário(String)"
 });
 formatter.result({
-  "duration": 374782800,
+  "duration": 236843700,
   "status": "passed"
 });
 formatter.match({
@@ -423,155 +387,89 @@ formatter.match({
   "location": "InserirContasteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 185381300,
+  "duration": 390309800,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoEntrar()"
 });
 formatter.result({
-  "duration": 884803900,
+  "duration": 1049795700,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.visualizoAPáginaInicial()"
 });
 formatter.result({
-  "duration": 72132500,
+  "duration": 72637500,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoContas()"
 });
 formatter.result({
-  "duration": 160286800,
+  "duration": 124877900,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoAdincionar()"
 });
 formatter.result({
-  "duration": 605380600,
+  "duration": 348102800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 16
+    }
+  ],
+  "location": "InserirContasteps.informAConta(String)"
+});
+formatter.result({
+  "duration": 87134600,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoSalvar()"
 });
 formatter.result({
-  "duration": 334928600,
+  "duration": 384149200,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContasteps.souNotificadoQueONomeDaContaÉObrigatório()"
+  "arguments": [
+    {
+      "val": "Informe o nome da conta",
+      "offset": 19
+    }
+  ],
+  "location": "InserirContasteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 84495400,
+  "duration": 54141200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1771427300,
+  "duration": 1457512300,
   "status": "passed"
 });
-formatter.scenarioOutline({
-  "line": 39,
-  "name": "Não deve inserir uma conta com nome já existente",
-  "description": "",
-  "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-com-nome-já-existente",
-  "type": "scenario_outline",
-  "keyword": "Esquema do Cenário"
-});
-formatter.step({
-  "line": 40,
-  "name": "que estou acessando a aplicação",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 41,
-  "name": "informo o usuário \"\u003cseuUsuario\u003e\"",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 42,
-  "name": "a senha \"\u003csuaSenha\u003e\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 43,
-  "name": "seleciono entrar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 44,
-  "name": "visualizo a página inicial",
-  "keyword": "Então "
-});
-formatter.step({
-  "line": 45,
-  "name": "seleciono Contas",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 46,
-  "name": "seleciono adincionar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 47,
-  "name": "inform a conta \"\u003cContadeTeste\u003e\"",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 48,
-  "name": "seleciono salvar",
-  "keyword": "E "
-});
-formatter.step({
-  "line": 49,
-  "name": "sou notificado que já existe uma conta com esse nome",
-  "keyword": "Entao "
-});
-formatter.examples({
-  "line": 50,
-  "name": "",
-  "description": "",
-  "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-com-nome-já-existente;",
-  "rows": [
-    {
-      "cells": [
-        "seuUsuario",
-        "suaSenha",
-        "ContadeTeste"
-      ],
-      "line": 51,
-      "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-com-nome-já-existente;;1"
-    },
-    {
-      "cells": [
-        "edufelizardo1@gmail.com",
-        "256249",
-        "Conta mesmo nome"
-      ],
-      "line": 52,
-      "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-com-nome-já-existente;;2"
-    }
-  ],
-  "keyword": "Exemplos"
-});
 formatter.scenario({
-  "line": 52,
-  "name": "Não deve inserir uma conta com nome já existente",
+  "line": 22,
+  "name": "Deve inserir uma conta com sucesso",
   "description": "",
-  "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-com-nome-já-existente;;2",
+  "id": "testar-o-site-seu-barriga;deve-inserir-uma-conta-com-sucesso;;4",
   "type": "scenario",
   "keyword": "Esquema do Cenário"
 });
 formatter.step({
-  "line": 40,
+  "line": 8,
   "name": "que estou acessando a aplicação",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 41,
+  "line": 9,
   "name": "informo o usuário \"edufelizardo1@gmail.com\"",
   "matchedColumns": [
     0
@@ -579,7 +477,7 @@ formatter.step({
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 42,
+  "line": 10,
   "name": "a senha \"256249\"",
   "matchedColumns": [
     1
@@ -587,27 +485,27 @@ formatter.step({
   "keyword": "E "
 });
 formatter.step({
-  "line": 43,
+  "line": 11,
   "name": "seleciono entrar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 44,
+  "line": 12,
   "name": "visualizo a página inicial",
   "keyword": "Então "
 });
 formatter.step({
-  "line": 45,
+  "line": 13,
   "name": "seleciono Contas",
   "keyword": "Quando "
 });
 formatter.step({
-  "line": 46,
+  "line": 14,
   "name": "seleciono adincionar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 47,
+  "line": 15,
   "name": "inform a conta \"Conta mesmo nome\"",
   "matchedColumns": [
     2
@@ -615,20 +513,23 @@ formatter.step({
   "keyword": "E "
 });
 formatter.step({
-  "line": 48,
+  "line": 16,
   "name": "seleciono salvar",
   "keyword": "E "
 });
 formatter.step({
-  "line": 49,
-  "name": "sou notificado que já existe uma conta com esse nome",
+  "line": 17,
+  "name": "recebo a mensagem \"Já existe uma conta com esse nome!\"",
+  "matchedColumns": [
+    3
+  ],
   "keyword": "Entao "
 });
 formatter.match({
   "location": "InserirContasteps.queEstouAcessandoAAplicação()"
 });
 formatter.result({
-  "duration": 5914420300,
+  "duration": 4414245900,
   "status": "passed"
 });
 formatter.match({
@@ -641,7 +542,7 @@ formatter.match({
   "location": "InserirContasteps.informoOUsuário(String)"
 });
 formatter.result({
-  "duration": 227706000,
+  "duration": 243622500,
   "status": "passed"
 });
 formatter.match({
@@ -654,35 +555,35 @@ formatter.match({
   "location": "InserirContasteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 321781200,
+  "duration": 198228400,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoEntrar()"
 });
 formatter.result({
-  "duration": 958918300,
+  "duration": 706256700,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.visualizoAPáginaInicial()"
 });
 formatter.result({
-  "duration": 100980000,
+  "duration": 65464700,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoContas()"
 });
 formatter.result({
-  "duration": 166447600,
+  "duration": 126163600,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoAdincionar()"
 });
 formatter.result({
-  "duration": 412372800,
+  "duration": 341484900,
   "status": "passed"
 });
 formatter.match({
@@ -695,25 +596,31 @@ formatter.match({
   "location": "InserirContasteps.informAConta(String)"
 });
 formatter.result({
-  "duration": 208881200,
+  "duration": 211038000,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoSalvar()"
 });
 formatter.result({
-  "duration": 536754000,
+  "duration": 370090400,
   "status": "passed"
 });
 formatter.match({
-  "location": "InserirContasteps.souNotificadoQueJáExisteUmaContaComEsseNome()"
+  "arguments": [
+    {
+      "val": "Já existe uma conta com esse nome!",
+      "offset": 19
+    }
+  ],
+  "location": "InserirContasteps.receboAMensagem(String)"
 });
 formatter.result({
-  "duration": 124193400,
+  "duration": 64382400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1669209600,
+  "duration": 1535978700,
   "status": "passed"
 });
 });
