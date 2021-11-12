@@ -1,6 +1,7 @@
 package steps;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
 import cucumber.api.java.pt.*;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -77,8 +78,21 @@ public class InserirContasteps {
         Assert.assertEquals("Já existe uma conta com esse nome!", texto);
     }
 
+    /**
+     * @param
+     */
     private void caminhoWebDriver() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\eofo\\Documents\\GitHub" +
                 "\\Labs_Java\\Cucumber_Site_SeuBarriga\\ChromeDriver\\chromedriver.exe");
+    }
+
+    /**
+     * @Hook
+     * Tem como objetivo efetuar ações que não estão ligado aso testes diretamente
+     */
+    @After
+    public void closeBrowser () {
+        webDriver.quit();
+        System.out.println("Teste realizado... Verifique os resultados.");
     }
 }
