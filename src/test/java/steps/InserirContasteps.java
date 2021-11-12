@@ -1,12 +1,19 @@
 package steps;
 
 import cucumber.api.PendingException;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.pt.*;
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.io.File;
+import java.io.IOException;
 
 public class InserirContasteps {
 
@@ -14,7 +21,7 @@ public class InserirContasteps {
 
     @Dado("^que estou acessando a aplicação$")
     public void queEstouAcessandoAAplicação() {
-        caminhoWebDriver();;
+        caminhoWebDriver();
         webDriver = new ChromeDriver();
         webDriver.get("https://seubarriga.wcaquino.me/");
     }
@@ -100,7 +107,17 @@ public class InserirContasteps {
      * @Hook
      * Tem como objetivo efetuar ações que não estão ligado aso testes diretamente
      */
-    @After
+
+    @After(order = 1)
+    public void screenshot (Scenario scenario) {
+        File file = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(file, new File("target/screeshot/" + scenario.getId() + ".jpg"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @After(order = 0)
     public void closeBrowser () {
         webDriver.quit();
         System.out.println("Teste realizado... Verifique os resultados.");
