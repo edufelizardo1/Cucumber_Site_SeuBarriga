@@ -168,7 +168,7 @@ formatter.match({
   "location": "InserirContasteps.queEstouAcessandoAAplicação()"
 });
 formatter.result({
-  "duration": 10199049500,
+  "duration": 6784426800,
   "status": "passed"
 });
 formatter.match({
@@ -181,7 +181,7 @@ formatter.match({
   "location": "InserirContasteps.informoOUsuário(String)"
 });
 formatter.result({
-  "duration": 209263500,
+  "duration": 389330500,
   "status": "passed"
 });
 formatter.match({
@@ -194,35 +194,35 @@ formatter.match({
   "location": "InserirContasteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 167258500,
+  "duration": 364912400,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoEntrar()"
 });
 formatter.result({
-  "duration": 818966000,
+  "duration": 765654200,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.visualizoAPáginaInicial()"
 });
 formatter.result({
-  "duration": 63870400,
+  "duration": 76345400,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoContas()"
 });
 formatter.result({
-  "duration": 271944000,
+  "duration": 105726200,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoAdincionar()"
 });
 formatter.result({
-  "duration": 435201800,
+  "duration": 431880100,
   "status": "passed"
 });
 formatter.match({
@@ -235,25 +235,25 @@ formatter.match({
   "location": "InserirContasteps.informAConta(String)"
 });
 formatter.result({
-  "duration": 160951100,
+  "duration": 233719400,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoSalvar()"
 });
 formatter.result({
-  "duration": 540622000,
+  "duration": 474580600,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.aContaÉInseridaComSucesso()"
 });
 formatter.result({
-  "duration": 62827500,
+  "duration": 123680600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1984242100,
+  "duration": 2019930600,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -397,7 +397,7 @@ formatter.match({
   "location": "InserirContasteps.queEstouAcessandoAAplicação()"
 });
 formatter.result({
-  "duration": 5058302900,
+  "duration": 5377764200,
   "status": "passed"
 });
 formatter.match({
@@ -410,7 +410,7 @@ formatter.match({
   "location": "InserirContasteps.informoOUsuário(String)"
 });
 formatter.result({
-  "duration": 226206600,
+  "duration": 374782800,
   "status": "passed"
 });
 formatter.match({
@@ -423,53 +423,53 @@ formatter.match({
   "location": "InserirContasteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 135361800,
+  "duration": 185381300,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoEntrar()"
 });
 formatter.result({
-  "duration": 719810000,
+  "duration": 884803900,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.visualizoAPáginaInicial()"
 });
 formatter.result({
-  "duration": 61560000,
+  "duration": 72132500,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoContas()"
 });
 formatter.result({
-  "duration": 155776500,
+  "duration": 160286800,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoAdincionar()"
 });
 formatter.result({
-  "duration": 462403500,
+  "duration": 605380600,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoSalvar()"
 });
 formatter.result({
-  "duration": 418056500,
+  "duration": 334928600,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.souNotificadoQueONomeDaContaÉObrigatório()"
 });
 formatter.result({
-  "duration": 60508300,
+  "duration": 84495400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1571794600,
+  "duration": 1771427300,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -549,7 +549,7 @@ formatter.examples({
       "cells": [
         "edufelizardo1@gmail.com",
         "256249",
-        "Conta de Teste"
+        "Conta mesmo nome"
       ],
       "line": 52,
       "id": "testar-o-site-seu-barriga;não-deve-inserir-uma-conta-com-nome-já-existente;;2"
@@ -608,7 +608,7 @@ formatter.step({
 });
 formatter.step({
   "line": 47,
-  "name": "inform a conta \"Conta de Teste\"",
+  "name": "inform a conta \"Conta mesmo nome\"",
   "matchedColumns": [
     2
   ],
@@ -628,7 +628,7 @@ formatter.match({
   "location": "InserirContasteps.queEstouAcessandoAAplicação()"
 });
 formatter.result({
-  "duration": 5006638100,
+  "duration": 5914420300,
   "status": "passed"
 });
 formatter.match({
@@ -641,7 +641,7 @@ formatter.match({
   "location": "InserirContasteps.informoOUsuário(String)"
 });
 formatter.result({
-  "duration": 409169400,
+  "duration": 227706000,
   "status": "passed"
 });
 formatter.match({
@@ -654,66 +654,66 @@ formatter.match({
   "location": "InserirContasteps.aSenha(String)"
 });
 formatter.result({
-  "duration": 164116500,
+  "duration": 321781200,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoEntrar()"
 });
 formatter.result({
-  "duration": 807004300,
+  "duration": 958918300,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.visualizoAPáginaInicial()"
 });
 formatter.result({
-  "duration": 73719700,
+  "duration": 100980000,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoContas()"
 });
 formatter.result({
-  "duration": 136934900,
+  "duration": 166447600,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoAdincionar()"
 });
 formatter.result({
-  "duration": 491574400,
+  "duration": 412372800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Conta de Teste",
+      "val": "Conta mesmo nome",
       "offset": 16
     }
   ],
   "location": "InserirContasteps.informAConta(String)"
 });
 formatter.result({
-  "duration": 244803300,
+  "duration": 208881200,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.selecionoSalvar()"
 });
 formatter.result({
-  "duration": 407357700,
+  "duration": 536754000,
   "status": "passed"
 });
 formatter.match({
   "location": "InserirContasteps.souNotificadoQueJáExisteUmaContaComEsseNome()"
 });
 formatter.result({
-  "duration": 70073800,
+  "duration": 124193400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 3050905200,
+  "duration": 1669209600,
   "status": "passed"
 });
 });
