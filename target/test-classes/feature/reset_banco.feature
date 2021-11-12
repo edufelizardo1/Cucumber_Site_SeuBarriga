@@ -1,4 +1,5 @@
 # language: pt
+@segundo
 Funcionalidade: Efetura reset em minha conta
   Como usuário do sistema
   Eu quero acessar o sistema
