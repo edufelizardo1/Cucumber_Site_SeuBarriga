@@ -60,22 +60,32 @@ public class InserirContasteps {
         webDriver.findElement(By.tagName("button")).click();
     }
 
-    @Entao("^a conta é inserida com sucesso$")
-    public void aContaÉInseridaComSucesso() {
-        String texto = webDriver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
-        Assert.assertEquals("Conta adicionada com sucesso!", texto);
+    @Entao("^recebo a mensagem \"([^\"]*)\"$")
+    public void receboAMensagem(String mensagem) throws Throwable {
+        String texto = webDriver.findElement(By.xpath("//div[starts-with(@class, 'alert alert-')]")).getText();
+        Assert.assertEquals(mensagem, texto);
     }
+//    @Entao("^a conta é inserida com sucesso$")
+//    public void aContaÉInseridaComSucesso() {
+//        String texto = webDriver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
+//        Assert.assertEquals("Conta adicionada com sucesso!", texto);
+//    }
+//
+//    @Entao("^Sou notificado que o nome da conta é obrigatório$")
+//    public void souNotificadoQueONomeDaContaÉObrigatório() {
+//        String texto = webDriver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
+//        Assert.assertEquals("Informe o nome da conta", texto);
+//    }
+//
+//    @Entao("^sou notificado que já existe uma conta com esse nome$")
+//    public void souNotificadoQueJáExisteUmaContaComEsseNome() {
+//        String texto = webDriver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
+//        Assert.assertEquals("Já existe uma conta com esse nome!", texto);
+//    }
 
-    @Entao("^Sou notificado que o nome da conta é obrigatório$")
-    public void souNotificadoQueONomeDaContaÉObrigatório() {
-        String texto = webDriver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
-        Assert.assertEquals("Informe o nome da conta", texto);
-    }
-
-    @Entao("^sou notificado que já existe uma conta com esse nome$")
-    public void souNotificadoQueJáExisteUmaContaComEsseNome() {
-        String texto = webDriver.findElement(By.xpath("//div[@class='alert alert-danger']")).getText();
-        Assert.assertEquals("Já existe uma conta com esse nome!", texto);
+    @E("^vendo o link de reset eu clico para resetar os meus dados$")
+    public void vendoOLinkDeResetEuClicoParaResetarOsMeusDados() {
+        webDriver.findElement(By.linkText("reset")).click();
     }
 
     /**
@@ -95,4 +105,6 @@ public class InserirContasteps {
         webDriver.quit();
         System.out.println("Teste realizado... Verifique os resultados.");
     }
+
+
 }
