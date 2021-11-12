@@ -44,7 +44,7 @@ public class InserirContasteps {
     @Então("^visualizo a página inicial$")
     public void visualizoAPáginaInicial() {
         String texto = webDriver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
-        Assert.assertEquals("Bem vindo, Eduardo Cândido!", texto);
+        Assert.assertEquals("Bem vindo, qatester!", texto);
     }
 
     @Quando("^seleciono Contas$")
