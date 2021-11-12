@@ -1,4 +1,5 @@
 # language: pt
+@primeiro
 Funcionalidade: Testar o site Seu Barriga
   Como um usuário
   Eu quero cadastrar contas
@@ -33,8 +34,8 @@ Funcionalidade: Testar o site Seu Barriga
 #    E seleciono salvar
 #    Entao  Sou notificado que o nome da conta é obrigatório
 #    Exemplos:
-#      | seuUsuario              | suaSenha |
-#      | edufelizardo1@gmail.com | 256249   |
+#      | seuUsuario         | suaSenha |
+#      | email@gmail.com    | ******   |
 #
 #
 #  Esquema do Cenário: Não deve inserir uma conta com nome já existente
@@ -49,5 +50,5 @@ Funcionalidade: Testar o site Seu Barriga
 #    E seleciono salvar
 #    Entao  sou notificado que já existe uma conta com esse nome
 #    Exemplos:
-#      | seuUsuario              | suaSenha | ContadeTeste     |
-#      | edufelizardo1@gmail.com | 256249   | Conta mesmo nome |
+#      | seuUsuario         | suaSenha |
+##      | email@gmail.com    | ******   |
