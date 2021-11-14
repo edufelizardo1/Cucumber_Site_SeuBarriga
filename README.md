@@ -5,10 +5,11 @@
 [![made-with-java](https://img.shields.io/badge/Language-Java-1f425f.svg)](https://www.oracle.com/br/java/technologies/javase-jdk8-doc-downloads.html)
 [![made-with-java](https://img.shields.io/badge/framework-Gherkin-1f425f.svg)](https://cucumber.io/docs/gherkin/)
 [![Framework-Cucumber](https://img.shields.io/badge/framework-Cucumber-1f425f.svg)](https://cucumber.io/)
+<!-- ![Profile views](https://gpvc.arturio.dev/edufelizardo1) -->
 [![made-with-java](https://img.shields.io/badge/framework-JUnit-1f425f.svg)](https://junit.org/junit4/)
 [![made-with-java](https://img.shields.io/badge/framework-Selenium-1f425f.svg)](https://www.selenium.dev/)
-<!-- ![Profile views](https://gpvc.arturio.dev/edufelizardo1) -->
 [![made-with-java](https://img.shields.io/badge/ide-Intellij-1f425f.svg)](https://www.jetbrains.com/)
+<!-- ![Profile views](https://gpvc.arturio.dev/edufelizardo1) -->
 [![GitHub license](https://img.shields.io/github/license/edufelizardo1/CucumberBasic)](https://github.com/edufelizardo1/Cucumber_Site_SeuBarriga/blob/main/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/edufelizardo1/CucumberBasic)](https://github.com/edufelizardo1/Cucumber_Site_SeuBarriga/network)
 [![GitHub stars](https://img.shields.io/github/stars/edufelizardo1/CucumberBasic)](https://github.com/edufelizardo1/Cucumber_Site_SeuBarriga/stargazers)
